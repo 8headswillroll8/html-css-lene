@@ -76,3 +76,10 @@
   max-width: 450px;
   padding-bottom: 80px;
 }
+
+.cart__payment-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}

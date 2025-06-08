@@ -19,6 +19,7 @@
 .payment__field--double,
 .shipping__field--double {
   display: flex;
+  gap: 10px;
 }
 
 .payment__date,
@@ -48,6 +49,7 @@ input[type="tel"] {
   padding: 0.75rem 0.5rem;
   font-size: 1rem;
   border: 1px solid #9dafb3;
+  margin: 10px 0;
 }
 
 label {
@@ -83,6 +85,7 @@ fieldset {
   align-items: center;
   gap: 8px;
   margin-right: 30px;
+  margin-bottom: 10px;
 }
 
 .radio-option input[type="radio"] {
