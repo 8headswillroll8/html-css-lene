@@ -66,7 +66,18 @@ footer {
   display: flex;
   background-color: #475842;
   color: #ffffff;
-  height: 250px;
+  padding: 2rem 1rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
 }
 
 /* Breakcrumb */
@@ -361,25 +372,27 @@ footer {
 /* Shipping Section */
 
 .shipping {
-  display: flex;
   background-color: #faf9f5;
+  padding: 20px 0;
 }
 
 .shipping__container {
   max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  height: 120px;
-  margin: auto;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0 1rem;
 }
 
 .shipping_content {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 20px 20px;
-  margin: 0 60px;
+  gap: 15px;
+  flex: 1 1 30%;
+  min-width: 250px;
+  padding: 10px 0;
 }
 
 .shipping_content > div:first-child {
@@ -393,6 +406,24 @@ footer {
   width: 30px;
   height: auto;
   display: block;
+}
+
+@media (max-width: 830px) {
+  .shipping__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .shipping_content {
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .shipping_content > div:first-child {
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* Footer section */
@@ -477,13 +508,22 @@ footer {
   color: #ffffff;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  border: 0;
+@media (max-width: 900px) {
+  .footer__columns {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: auto;
+  }
+
+  .footer__column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer__input,
+  .footer__button {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
 }
