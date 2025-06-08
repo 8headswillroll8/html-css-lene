@@ -1,0 +1,19 @@
+.confirmation__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem;
+  padding: 1rem;
+  min-height: 200px;
+}
+
+.confirmation__container img {
+  max-width: 60px;
+  height: auto;
+}
+
+.btn--confirmation {
+  margin-bottom: 100px;
+}
