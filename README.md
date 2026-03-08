@@ -31,9 +31,7 @@ The project includes:
 
 Clone the repository:
 
-
 git clone https://github.com/8headswillroll8/html-css-lene.git
-
 
 Open the project folder in your preferred code editor.
 
